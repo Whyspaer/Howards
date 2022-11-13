@@ -3,17 +3,9 @@
     margin: 0px;
   }
   
-@media screen and (min-width: 576px) {
-  .dropdown-box{
-    display: block;
-    width: 100%;
-    margin: 0px;
 
-  }
-}
-  @media screen and (min-width:768px){
-    li{display: inline-block;}
-  }
+
+ 
   body{
     background-image:url(https://th.bing.com/th/id/R.7c32fb9ab3d3c64ce4586d727e5970dd?rik=9ZAO1GkfvsPK4g&riu=http%3a%2f%2fmedia.giphy.com%2fmedia%2fyENPyn21ogrjq%2fgiphy.gif&ehk=F8Ipp0TFrostXdITo8gV8hJcCDzdZOhS%2f0AU20lqk%2f0%3d&risl=&pid=ImgRaw&r=0);
     background-size: cover;
@@ -34,7 +26,7 @@
   z-index: 10;
 }
 .fa-brands, .fa-solid{
-  font-size: 1.5em;
+  font-size: 1em;
   color:rgb(76, 214, 76);
   padding-right: 5px;
 
@@ -43,10 +35,20 @@
     text-align: center;
     color: rgb(76, 214, 76);
   }
-#container{
+.container{
   position: relative;
-  width:auto;
+  width:50%;
   text-align: center;
+}
+
+ul{
+  color:darkblue;
+  font-size: 28px;
+  text-align: left;
+} 
+p{
+  color:white;
+  font-size: 25px;
 }
 .centered {
   position: absolute;
@@ -55,20 +57,13 @@
   top: 3%;
   left: 20%;
   background-color: rgba(0, 0, 0, 0.315);
-}
-ul{
-  color:darkblue;
-  font-size: 28px;
+  font-size: 24px;
+  color: blue;
   text-align: left;
-} 
-p{
-  color:rgb(76, 214, 76);
-  font-size: 25px;
-  text-align: center;
 }
 #flex-container{
   
-  border: 2px solid rgb(76, 214, 76);
+  border: 2px solid rgb(249, 249, 249);
   
   justify-content: center;
 
@@ -90,17 +85,69 @@ p{
     color: black;
     font-size: 16px;
   }
-  .tangle{
+  .respool{
       position: absolute;
       padding: 10px 10px 10px 10px;
-      
       top: 10px;
       left: 16px;
-      top: 55%;
-      left: 16%;
+      top: 125%;
+      left: 57%;
       background-color: rgba(255, 255, 255, 0.749);
       border-radius: 3px;
       border:2px  black solid;
-      
+      text-align: center;
     }
-  
+    .center{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+    }
+    .dropdown-box {
+      display:none;
+      width: 25%;
+      color: rgb(76, 214, 76);
+      margin-right: 35px;
+    
+    }
+    
+    nav:hover .dropdown-box{
+    display: block;
+    position: absolute;
+    border-top-right-radius: 25px;
+    color: rgb(76, 214, 76);
+    }
+    li {
+      
+      padding: 5px;
+      text-align: center;
+    }
+    
+    
+    
+    
+    
+    li:hover {
+      background-color: grey;
+    }
+    
+    
+      
+      .fas{
+        display: none;
+      }
+      .nav:hover .dropdown-box{
+        position: static;
+      }
+      @media screen and (min-width:768px){
+        li{display: inline-block;}
+      }
+      @media screen and (min-width: 576px) {
+        .dropdown-box{
+          display: block;
+          width: 100%;
+          margin: 0px;
+      
+        }
+    }
+    
